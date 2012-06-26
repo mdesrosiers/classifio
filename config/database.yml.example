@@ -1,0 +1,18 @@
+postgres: &postgres
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  username: classifio
+  password:
+
+development:
+  <<: *postgres
+  database: classifio_development
+
+test:
+  <<: *postgres
+  database: classifio_test
+
+production:
+  <<: *postgres
+  database: classifio_production
