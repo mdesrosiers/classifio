@@ -7,7 +7,7 @@ class Classifio.Views.ClassifiedsIndex extends Backbone.View
     @collection.on('add', @appendClassified)
 
   render: =>
-    $(@el).html(@template())
+    $(@el).html(@template)
     @collection.each(@appendClassified)
     this
 

@@ -1,10 +1,11 @@
 class Classifio.Routers.Classifieds extends Backbone.Router
   routes:
     '': 'index'
+    'classifieds/new': 'new'
     'classifieds/:id': 'show'
 
   initialize: ->
-    @collection = new Classifio.Collections.Classifieds()
+    @collection = new Classifio.Collections.Classifieds
     @collection.reset($('#container').data('classifieds'))
 
   index: ->
@@ -16,4 +17,8 @@ class Classifio.Routers.Classifieds extends Backbone.Router
       id: id
     model.fetch()
     view = new Classifio.Views.ClassifiedsShow(model: model)
+    $('#container').html(view.render().el)
+
+  new: ->
+    view = new Classifio.Views.ClassifiedsNew
     $('#container').html(view.render().el)
