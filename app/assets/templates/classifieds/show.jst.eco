@@ -1,2 +1,2 @@
-<h3><%= @classified.get('title') %></h3>
+<h2><%= @classified.get('title') %></h3>
 <p><%= @classified.get('description') %></p>

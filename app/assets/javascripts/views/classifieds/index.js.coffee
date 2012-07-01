@@ -3,14 +3,14 @@ class Classifio.Views.ClassifiedsIndex extends Backbone.View
   template: JST['classifieds/index']
 
   initialize: ->
-    @collection.on('reset', @render, this)
+    @collection.on('reset', @render)
     @collection.on('add', @appendClassified)
 
-  render: ->
+  render: =>
     $(@el).html(@template())
     @collection.each(@appendClassified)
     this
 
   appendClassified: (classified) =>
-    view = new Classifio.Views.ClassifiedsShow(model: classified)
+    view = new Classifio.Views.ClassifiedsIndexItem(model: classified)
     @$('#classifieds').append(view.render().el)

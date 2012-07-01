@@ -2,8 +2,6 @@ class Classifio.Views.ClassifiedsShow extends Backbone.View
 
   template: JST['classifieds/show']
 
-  tagName: 'li'
-
   events:
     'click': 'showClassified'
 
