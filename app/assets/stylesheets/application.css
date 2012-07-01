@@ -3,3 +3,5 @@
  *= require bootstrap
  *= require_tree .
  */
+
+a { cursor: pointer; color: blue; }

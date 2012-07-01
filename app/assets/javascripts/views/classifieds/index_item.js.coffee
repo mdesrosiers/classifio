@@ -1,5 +1,7 @@
 class Classifio.Views.ClassifiedsIndexItem extends Backbone.View
 
+  template: JST['classifieds/index_item']
+
   tagName: 'li'
 
   events:
@@ -12,5 +14,5 @@ class Classifio.Views.ClassifiedsIndexItem extends Backbone.View
     Backbone.history.navigate("classifieds/#{@model.get('id')}", true)
 
   render: =>
-    $(@el).html(@model.get('title'))
+    $(@el).html(@template(classified: @model))
     this
