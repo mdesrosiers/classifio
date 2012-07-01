@@ -7,6 +7,8 @@ class Classifio.Routers.Classifieds extends Backbone.Router
   initialize: ->
     @collection = new Classifio.Collections.Classifieds
     @collection.reset($('#container').data('classifieds'))
+    header = new Classifio.Views.HeaderShow
+    $('#header').html(header.render().el)
 
   index: ->
     view = new Classifio.Views.ClassifiedsIndex(collection: @collection)
