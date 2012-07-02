@@ -11,6 +11,7 @@ class Classifio.Routers.Classifieds extends Backbone.Router
     $('#header').html(header.render().el)
 
   index: ->
+    @collection.fetch()
     view = new Classifio.Views.ClassifiedsIndex(collection: @collection)
     $('#container').html(view.render().el)
 
