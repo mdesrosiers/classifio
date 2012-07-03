@@ -5,14 +5,13 @@ class Classifio.Routers.Classifieds extends Backbone.Router
     'classifieds/:id': 'show'
 
   initialize: ->
-    @collection = new Classifio.Collections.Classifieds
-    @collection.reset($('#container').data('classifieds'))
+    Classifio.classifieds = new Classifio.Collections.Classifieds
+    Classifio.classifieds.reset($('#container').data('classifieds'))
     header = new Classifio.Views.HeaderShow
     $('#header').html(header.render().el)
 
   index: ->
-    @collection.fetch()
-    view = new Classifio.Views.ClassifiedsIndex(collection: @collection)
+    view = new Classifio.Views.ClassifiedsIndex(collection: Classifio.classifieds)
     $('#container').html(view.render().el)
 
   show: (id) ->

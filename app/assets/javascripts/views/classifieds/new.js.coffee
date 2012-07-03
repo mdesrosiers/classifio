@@ -11,12 +11,17 @@ class Classifio.Views.ClassifiedsNew extends Backbone.View
 
   createClassified: (event) ->
     event.preventDefault()
-    classified = new Classifio.Models.Classified
+    attributes =
       title: $('#new_classified_title').val()
       description: $('#new_classified_description').val()
-    classified.save {},
-      success: -> Backbone.history.navigate("classifieds/" + classified.id, true)
+    options =
+      wait: true
+      success: @handleSuccess
       error: @handleError
+    Classifio.classifieds.create(attributes, options)
+
+  handleSuccess: (classified, response) ->
+    Backbone.history.navigate("classifieds/" + classified.id, true)
 
   handleError: (classified, response) ->
     if response.status == 422
