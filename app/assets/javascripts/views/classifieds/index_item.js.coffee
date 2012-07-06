@@ -4,6 +4,8 @@ class Classifio.Views.ClassifiedsIndexItem extends Backbone.View
 
   tagName: 'li'
 
+  className: 'span4'
+
   events:
     'click': 'showClassified'
 
