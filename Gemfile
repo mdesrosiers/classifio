@@ -3,6 +3,9 @@ source 'https://rubygems.org'
 gem 'rails'
 gem 'pg'
 gem 'thin'
+gem 'jquery-rails'
+gem 'pry'
+gem 'paperclip'
 
 group :assets do
   gem 'eco'
@@ -10,6 +13,3 @@ group :assets do
   gem 'coffee-rails'
   gem 'uglifier'
 end
-
-gem 'jquery-rails'
-gem 'pry'
