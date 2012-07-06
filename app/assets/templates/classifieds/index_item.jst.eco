@@ -1,1 +1,3 @@
-<a><%= @classified.get('title') %></a>
+<a class="thumbnail">
+  <img src="<%= @classified.get('image_url') %>">
+</a>

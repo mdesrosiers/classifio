@@ -1,4 +1,5 @@
-/.bundle
-/log/*.log
-/tmp
-/config/database.yml
+.bundle
+log/*.log
+tmp
+config/database.yml
+public/system
