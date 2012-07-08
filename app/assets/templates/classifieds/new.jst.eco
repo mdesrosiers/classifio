@@ -13,6 +13,12 @@
         <textarea id="new_classified_description" name="description" class="input-xxlarge" rows="6"></textarea>
       </div>
     </div>
+    <div class="control-group">
+      <label class="control-label" for="new_classified_image">Image</label>
+      <div class="controls">
+        <input type="file" id="new_classified_image" name="image" class="input-file">
+      </div>
+    </div>
     <div class="form-actions">
       <input type="submit" id="post" class="btn btn-primary" value="Post">
     </div>

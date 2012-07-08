@@ -5,3 +5,7 @@ Classified.create(title: 'Bike Trailer', description: 'Chariot Cougar 2, in good
 Classified.create(title: 'iPhone 4', description: 'iPhone 4, 32G, white, no scratches', image: missing_thumbnail)
 Classified.create(title: 'Mountain Bike', description: 'Brodie Bruzza 2012', image: missing_thumbnail)
 Classified.create(title: 'Star Wars Blu-ray', description: 'The complete sage, 6 movies', image: missing_thumbnail)
+Classified.create(title: 'Game of Thrones Books', description: 'Vol 1 to 4', image: missing_thumbnail)
+Classified.create(title: 'Leather Couch', description: 'Brown leather couch', image: missing_thumbnail)
+Classified.create(title: '46" LCD TV', description: 'Sony Bravia 46" LCD TV', image: missing_thumbnail)
+Classified.create(title: '2008 Toyota Camry', description: 'Black, 5 speed, low mileage', image: missing_thumbnail)
