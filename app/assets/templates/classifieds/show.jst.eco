@@ -1,7 +1,8 @@
 <h2><%= @classified.get('title') %></h3>
 <p><%= @classified.get('description') %></p>
-<div id="image-upload">
-  <label for="new_classified_image">Attach a file to upload</label>
-  <input type="file" id="new_classified_image" name="image">
+<div id="image"></div>
+<div id="upload">
+  <label for="image-upload">Attach a file to upload</label>
+  <input type="file" id="image-upload" name="image">
   <button>Upload Image</button>
 </div>
