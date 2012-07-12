@@ -4,6 +4,7 @@ class Classifio.Views.ClassifiedsShow extends Backbone.View
 
   events:
     'click': 'showClassified'
+    'click #image-upload button': 'upload'
 
   initialize: ->
     @model.on('change', @render)
@@ -14,3 +15,24 @@ class Classifio.Views.ClassifiedsShow extends Backbone.View
   render: =>
     $(@el).html(@template(classified: @model))
     this
+
+  initUploader: ->
+    uploadOptions =
+      prefix: 'image'
+      accept: 'json'
+      beforeSend: (xhr) ->
+        xhr.setRequestHeader('X-CSRF-Token', $('meta[name="csrf-token"]').attr('content'))
+      url: "/api/classifieds/" + @model.get('id') + "/image"
+      success: @uploadSuccess
+
+    @uploader = new uploader(@uploadInput(), uploadOptions)
+
+  uploadInput: ->
+    return @$('#image-upload input').get(0)
+
+  upload: ->
+    @initUploader()
+    @uploader.send()
+
+  uploadSuccess: (event) =>
+    @model.fetch()

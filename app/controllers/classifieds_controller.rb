@@ -13,6 +13,16 @@ class ClassifiedsController < ApplicationController
     respond_with Classified.create(params[:classified])
   end
 
+  def image
+    classified = Classified.find(params[:id])
+    classified.image = params[:image]
+    classified.save
+
+    respond_with classified do |format|
+      format.json { render }
+    end
+  end
+
   def update
     respond_with Classified.update(params[:id], params[:classified])
   end

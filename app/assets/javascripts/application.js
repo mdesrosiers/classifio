@@ -4,6 +4,7 @@
 //= require underscore
 //= require backbone
 //= require bootstrap
+//= require uploader
 //= require ./classifio
 //= require_tree ../templates
 //= require_tree ./models
