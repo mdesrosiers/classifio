@@ -15,9 +15,7 @@ class Classifio.Routers.Classifieds extends Backbone.Router
     $('#container').html(view.render().el)
 
   show: (id) ->
-    model = new Classifio.Models.Classified
-      id: id
-    model.fetch()
+    model = Classifio.classifieds.get(id)
     view = new Classifio.Views.ClassifiedsShow(model: model)
     $('#container').html(view.render().el)
 
