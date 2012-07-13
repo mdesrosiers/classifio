@@ -15,13 +15,14 @@ group :assets do
 end
 
 group :test, :development do
-  gem 'jasmine-rails'
+  gem 'jasmine'
+  gem 'jasmine-headless-webkit'
   gem 'rspec-rails'
-  gem 'guard-rails-assets'
-  gem 'guard-jasmine-headless-webkit'
 end
 
 group :development do
   gem 'guard'
+  gem 'guard-rails-assets'
+  gem 'guard-jasmine-headless-webkit'
   gem 'growl'
 end

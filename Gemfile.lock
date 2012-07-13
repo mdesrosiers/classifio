@@ -79,10 +79,6 @@ GEM
       multi_json
       rainbow
       sprockets (~> 2)
-    jasmine-rails (0.0.3)
-      jasmine
-      jasmine-headless-webkit
-      rails (>= 3.1.0)
     journey (1.0.4)
     jquery-rails (2.0.2)
       railties (>= 3.2.0, < 5.0)
@@ -197,7 +193,8 @@ DEPENDENCIES
   guard
   guard-jasmine-headless-webkit
   guard-rails-assets
-  jasmine-rails
+  jasmine
+  jasmine-headless-webkit
   jquery-rails
   paperclip
   pg

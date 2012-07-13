@@ -1,4 +1,5 @@
 .bundle
+.jhw-cache
 log/*.log
 tmp
 config/database.yml
