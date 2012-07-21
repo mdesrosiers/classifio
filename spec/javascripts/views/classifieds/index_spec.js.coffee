@@ -9,6 +9,6 @@ describe "Classifio.Views.ClassifiedIndex", ->
       thumbnail_url: @thumbnail_url])
     @view = new Classifio.Views.ClassifiedsIndex(el: @el, collection: @classifieds)
 
-  it "should contain the the collection of classifieds", ->
+  it "should contain an image tag for for the thumbnail url", ->
     @view.render()
-    expect(@el.html()).toContain(@thumbnail_url)
+    expect(@el.find('img')).toHaveAttr('src', @thumbnail_url)
