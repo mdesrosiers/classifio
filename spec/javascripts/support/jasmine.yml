@@ -1,7 +1,10 @@
 src_files:
   - "vendor/**/*.{js,coffee}"
   - "lib/**/*.{js,coffee}"
-  - "app/**/*.{js,coffee}"
+  - "app/assets/javascripts/models/**/*.{js,coffee}"
+  - "app/assets/javascripts/collections/**/*.{js,coffee}"
+  - "app/assets/javascripts/views/**/*.{js,coffee}"
+  - "app/assets/javascripts/routers/**/*.{js,coffee}"
 
 stylesheets:
   - "vendor/**/*.css"
