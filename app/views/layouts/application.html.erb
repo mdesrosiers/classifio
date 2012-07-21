@@ -4,6 +4,7 @@
 <title><%= t('title') %></title>
 <%= stylesheet_link_tag "application", :media => "all" %>
 <%= javascript_include_tag "application" %>
+<%= javascript_tag "$('document').ready(function() { Classifio.init() });" %>
 <%= csrf_meta_tags %>
 </head>
 <body>

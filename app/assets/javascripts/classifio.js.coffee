@@ -6,6 +6,3 @@ window.Classifio =
   init: ->
     new Classifio.Routers.Classifieds()
     Backbone.history.start(pushState: true)
-
-$(document).ready ->
-  Classifio.init()
