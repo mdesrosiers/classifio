@@ -16,13 +16,10 @@ end
 
 group :test, :development do
   gem 'jasminerice'
-  gem 'jasmine-headless-webkit'
+  gem 'guard-jasmine'
   gem 'rspec-rails'
 end
 
 group :development do
-  gem 'guard'
-  gem 'guard-rails-assets'
-  gem 'guard-jasmine-headless-webkit'
   gem 'growl'
 end
