@@ -4,6 +4,8 @@
 //= require underscore
 //= require backbone
 //= require bootstrap
+//= require i18n
+//= require i18n/translations
 //= require uploader
 //= require ./classifio
 //= require_tree ../templates

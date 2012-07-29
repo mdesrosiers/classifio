@@ -6,6 +6,7 @@ gem 'thin'
 gem 'jquery-rails'
 gem 'pry'
 gem 'paperclip'
+gem 'i18n-js'
 
 group :assets do
   gem 'eco'
