@@ -1,20 +1,20 @@
 <form id="new_classified" class="form-horizontal">
   <fieldset>
-    <legend>New Classified</legend>
+    <legend><%= I18n.t('new_classified') %></legend>
     <div class="control-group">
-      <label class="control-label" for="classified_title">Title</label>
+      <label class="control-label" for="classified_title"><%= I18n.t('title') %></label>
       <div class="controls">
         <input id="classified_title" type="text" name="title" class="input-xxlarge">
       </div>
     </div>
     <div class="control-group">
-      <label class="control-label" for="classified_description">Description</label>
+      <label class="control-label" for="classified_description"><%= I18n.t('description') %></label>
       <div class="controls">
         <textarea id="classified_description" name="description" class="input-xxlarge" rows="6"></textarea>
       </div>
     </div>
     <div class="form-actions">
-      <input type="submit" id="post" class="btn btn-primary" value="Post">
+      <input type="submit" id="post" class="btn btn-primary" value="<%= I18n.t('post') %>">
     </div>
   </fieldset>
 </form>

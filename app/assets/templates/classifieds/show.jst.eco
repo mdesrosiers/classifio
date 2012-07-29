@@ -2,7 +2,7 @@
 <p><%= @classified.get('description') %></p>
 <div id="image"></div>
 <div id="upload">
-  <label for="image-upload">Attach a file to upload</label>
+  <label for="image-upload"><%= I18n.t('attach_a_file') %></label>
   <input type="file" id="image-upload" name="image">
-  <button>Upload Image</button>
+  <button><%= I18n.t('upload_image') %></button>
 </div>

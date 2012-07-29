@@ -1,6 +1,11 @@
 en:
-  heading: 'Classifio'
-  tagline: 'Thanks for looking at my store. Here''s what I have to offer.'
-  title: 'Classifio'
+  classifio: 'Classifio'
+  tagline: 'Thanks for looking at my store. Here''s what on sale.'
   loading: 'Loading..'
   new: "New"
+  new_classified: "New Classified"
+  title: "Title"
+  description: "Description"
+  post: "Post"
+  attach_a_file: "Attach a file to upload"
+  upload_image: "Upload Image"
