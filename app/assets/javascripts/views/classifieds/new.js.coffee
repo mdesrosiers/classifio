@@ -6,14 +6,14 @@ class Classifio.Views.ClassifiedsNew extends Backbone.View
     'submit #new_classified': 'createClassified'
 
   render: ->
-    $(@el).html(@template)
+    @$el.html(@template)
     this
 
   createClassified: (event) ->
     event.preventDefault()
     attributes =
-      title: $('#new_classified_title').val()
-      description: $('#new_classified_description').val()
+      title: $('#classified_title').val()
+      description: $('#classified_description').val()
     options =
       wait: true
       success: @handleSuccess
@@ -26,5 +26,4 @@ class Classifio.Views.ClassifiedsNew extends Backbone.View
   handleError: (classified, response) ->
     if response.status == 422
       errors = $.parseJSON(response.responseText).errors
-      for attribute, messages of errors
-        alert "#{attribute} #{message}" for message in messages
+      new Classifio.Views.Error(errors: errors).render()

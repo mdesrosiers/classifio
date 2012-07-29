@@ -2,15 +2,15 @@
   <fieldset>
     <legend>New Classified</legend>
     <div class="control-group">
-      <label class="control-label" for="new_classified_title">Title</label>
+      <label class="control-label" for="classified_title">Title</label>
       <div class="controls">
-        <input id="new_classified_title" type="text" name="title" class="input-xxlarge">
+        <input id="classified_title" type="text" name="title" class="input-xxlarge">
       </div>
     </div>
     <div class="control-group">
-      <label class="control-label" for="new_classified_description">Description</label>
+      <label class="control-label" for="classified_description">Description</label>
       <div class="controls">
-        <textarea id="new_classified_description" name="description" class="input-xxlarge" rows="6"></textarea>
+        <textarea id="classified_description" name="description" class="input-xxlarge" rows="6"></textarea>
       </div>
     </div>
     <div class="form-actions">
