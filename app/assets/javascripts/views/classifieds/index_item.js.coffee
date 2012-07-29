@@ -16,5 +16,5 @@ class Classifio.Views.ClassifiedsIndexItem extends Backbone.View
     Backbone.history.navigate("classifieds/#{@model.get('id')}", true)
 
   render: =>
-    $(@el).html(@template(classified: @model))
+    @$el.html(@template(classified: @model))
     this

@@ -18,7 +18,7 @@ class Classifio.Views.ClassifiedsShow extends Backbone.View
     this
 
   renderTemplate: ->
-    $(@el).html(@template(classified: @model))
+    @$el.html(@template(classified: @model))
 
   renderImage: ->
     thumbnail = @model.get('thumbnail_url')

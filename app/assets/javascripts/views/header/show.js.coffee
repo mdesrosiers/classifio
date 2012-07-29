@@ -18,5 +18,5 @@ class Classifio.Views.HeaderShow extends Backbone.View
     Backbone.history.navigate("classifieds/new", true)
 
   render: ->
-    $(@el).html(@template)
+    @$el.html(@template)
     this
