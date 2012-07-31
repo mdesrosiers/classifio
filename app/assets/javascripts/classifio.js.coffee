@@ -1,7 +1,10 @@
 window.Classifio =
   Models: {}
   Collections: {}
-  Views: {}
+  Views: {
+    Classifieds: {}
+    Header: {}
+  }
   Routers: {}
   init: ->
     new Classifio.Routers.Classifieds()

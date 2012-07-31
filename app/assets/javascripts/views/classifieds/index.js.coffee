@@ -1,4 +1,4 @@
-class Classifio.Views.ClassifiedsIndex extends Backbone.View
+class Classifio.Views.Classifieds.Index extends Backbone.View
 
   template: JST['classifieds/index']
 
@@ -12,5 +12,5 @@ class Classifio.Views.ClassifiedsIndex extends Backbone.View
     this
 
   appendClassified: (classified) =>
-    view = new Classifio.Views.ClassifiedsIndexItem(model: classified)
+    view = new Classifio.Views.Classifieds.IndexItem(model: classified)
     @$('#classifieds').append(view.render().el)

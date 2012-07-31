@@ -1,4 +1,4 @@
-class Classifio.Views.HeaderShow extends Backbone.View
+class Classifio.Views.Header.Show extends Backbone.View
 
   template: JST['header/show']
 

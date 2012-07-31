@@ -1,4 +1,4 @@
-describe "Classifio.Views.ClassifiedIndexItem", ->
+describe "Classifio.Views.Classifieds.IndexItem", ->
 
   beforeEach ->
     @el = sandbox()
@@ -7,7 +7,7 @@ describe "Classifio.Views.ClassifiedIndexItem", ->
       title: 'foo'
       description: 'bar'
       thumbnail_url: @thumbnail_url)
-    @view = new Classifio.Views.ClassifiedsIndexItem(el: @el, model: @classified)
+    @view = new Classifio.Views.Classifieds.IndexItem(el: @el, model: @classified)
 
   afterEach ->
     @view.remove()

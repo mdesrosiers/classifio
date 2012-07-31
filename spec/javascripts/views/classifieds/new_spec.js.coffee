@@ -1,8 +1,8 @@
-describe "Classifio.Views.ClassifiedNew", ->
+describe "Classifio.Views.Classifieds.New", ->
 
   beforeEach ->
     @el = "<div></div>"
-    @view = new Classifio.Views.ClassifiedsNew(el: @el)
+    @view = new Classifio.Views.Classifieds.New(el: @el)
     Classifio.classifieds = new Classifio.Collections.Classifieds
 
   afterEach ->

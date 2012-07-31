@@ -1,10 +1,10 @@
-describe "Classifio.Views.ClassifiedIndex", ->
+describe "Classifio.Views.Classifieds.Index", ->
 
   beforeEach ->
     @el = sandbox()
     @thumbnail_url = 'http://test.png'
     @classifieds = new Classifio.Collections.Classifieds([{}, {}])
-    @view = new Classifio.Views.ClassifiedsIndex(el: @el, collection: @classifieds)
+    @view = new Classifio.Views.Classifieds.Index(el: @el, collection: @classifieds)
 
   afterEach ->
     @view.remove()

@@ -1,4 +1,4 @@
-class Classifio.Views.ClassifiedsIndexItem extends Backbone.View
+class Classifio.Views.Classifieds.IndexItem extends Backbone.View
 
   template: JST['classifieds/index_item']
 
